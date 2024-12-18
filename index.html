@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdamB Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="https://i.imgur.com/RjyRyGs.png" alt="Profile Picture">
+            <h1>Adam Busby</h1>
+        </div>
+
+        <div class="about">
+            <p>I enjoy learning about <span>cybersecurity</span> and <span>creating software</span>. I also like staying fit and strong by going to the <span>gym</span>.</p>
+        </div>
+
+        <div class="socials">
+            <a href="https://www.instagram.com/adam_busby_">Instagram</a>
+            <a href="https://www.github.com/M1NM1">GitHub</a>
+            <a href="https://www.stackoverflow.com/users/15796123/atheriums">Stack Overflow</a>
+        </div>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>Python</li>
+            <li>Graphic Design</li>
+            <li>Cybersecurity</li>
+            <li>UI/UX Design</li>
+        </ul>
+
+        <h2>Work Experience</h2>
+        <table>
+            <tr>
+                <th>Job Title</th>
+                <th>Company</th>
+                <th>Years</th>
+            </tr>
+            <tr>
+            <tr>
+                <td><b>Head of Cybersecurity Division</b></td>
+                <td><i>Gloogle</i></td>
+                <td>2022-Now</td>
+            </tr>
+            <tr>
+                <td><b>General Worker of Cybersecurity division</b></td>
+                <td><i>Gloogle</i></td>
+                <td>2019-2022</td>
+            </tr>
+            <tr>
+                <td><b>Helpdesk Attendent</b></td>
+                <td><i>Fligma</i></td>
+                <td>2016-2019</td>
+            </tr>
+            <tr>
+                <td><b>Intern</b></td>
+                <td><i>Stark Enterprise</i></td>
+                <td>2015-2016</td>
+            </tr>
+
+            <tr>
+        </table>
+
+        <h2>Academic Qualifications</h2>
+        <ol>
+            <li>High School Diploma from ISOB</li>
+            <li>Bachelor’s Degree in Cybersecurity and Risk Assesment</li>
+            <li>CompTIA Security+</li>
+            <li>CISSP</li>
+            <li>CEH</li>
+            <li>CCNA</li>
+        </ol>
+    </div>
+
+    <div class="toolbar">
+        <div></div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <button class="mode-toggle" onclick="toggleMode()">Light Mode</button>
+    </div>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            const button = document.querySelector('.mode-toggle');
+
+            if (body.style.backgroundColor === 'white') {
+                body.style.backgroundColor = '#111';
+                body.style.color = '#fff';
+                button.textContent = 'Light Mode';
+            } else {
+                body.style.backgroundColor = 'white';
+                body.style.color = '#000';
+                button.textContent = 'Dark Mode';
+            }
+            document.querySelectorAll('table, table th, table td').forEach(el => el.style.color = body.style.color);
+
+        }
+    </script>
+</body>
+</html>

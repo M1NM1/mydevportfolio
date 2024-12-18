@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    flex: 1;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.about {
+    margin-top: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+.about span {
+    background: #444;
+    padding: 3px 6px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+}
+
+.about span:nth-child(1) {
+    background-color: #5A8DEE;
+}
+
+.about span:nth-child(2) {
+    background-color: #39DA8A;
+}
+
+.about span:nth-child(3) {
+    background-color: #FDAC41;
+}
+
+.socials {
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.socials a {
+    color: #fff;
+    text-decoration: none;
+    background: #333;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.socials a:hover {
+    background: #555;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background: #222;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.toolbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.toolbar a:hover {
+    background: #555;
+}
+
+.toolbar .mode-toggle {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toolbar .mode-toggle:hover {
+    background: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #444;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #333;
+}
